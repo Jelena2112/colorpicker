@@ -1,0 +1,180 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: rgba(127,127,127,1);
+}
+.mainDiv{
+	width: 1300px;
+	height: 900px;
+	border-radius: 450px;
+	display: flex;
+	flex-direction: row;
+	margin: 20px auto;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    position: relative;
+}
+.currentColor{
+	width: 200px;
+	height: 60px;
+	font-size: 25px;
+	position: absolute;
+	top:150px;
+	left: calc(50% - 100px);
+	color: black;
+}
+.smallDiv{
+	width:300px;
+	height: 300px;
+	border-radius: 150px;
+	line-height: 300px;
+	border:1px solid black;
+	margin-left: 20px;
+}
+.red{
+	background-color: red;
+}
+.green{
+	left: 300px;
+	background-color: green;
+}
+.blue{
+	left: 600px;
+	background-color: blue;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 240px;
+  height: 5px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+.colorHistory{
+	width: 150px;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+    text-align: center;
+    overflow-y: scroll; 
+    line-height: 110px;
+}
+.eachHistory{
+	width: 110px;
+	height: 110px;
+	border-radius: 55px;
+	background-color: white;
+	margin:10px auto 0;
+	border: 1px solid white;
+}
+.saveButton{
+	width: 200px;
+	height: 60px;
+	font-size: 23px;
+	position: absolute;
+	bottom: 150px;
+	left: calc(50% - 100px);
+	border-radius: 25px;
+	border:1px solid white;
+}
+
+@media only screen and (min-width: 240px) and (max-width: 640px){
+	.colorHistory{
+		height: 100px;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		overflow-y:hidden;
+		overflow-x: scroll;
+		line-height: 80px;
+	}
+	.eachHistory{
+		width: 90px;
+		height: 90px;
+		border-radius: 45px;
+		flex-shrink: 0;
+		margin: 5px;
+	}
+	.mainDiv{
+		width: 240px;
+		height: 600px;
+		flex-direction: column;
+	}
+	.slider{
+		width: 200px;
+	}
+	.saveButton{
+		bottom: 50px;
+	}
+	.currentColor{
+		top:85px;
+		font-size: 21px;
+	}
+	.smallDiv{
+		width: 240px;
+		height: 70px;
+		border-radius: 20px;
+		margin: 5px auto;
+		line-height: 75px;
+	}
+}
+@media only screen and (min-width: 641px) and (max-width: 1200px){
+	.colorHistory{
+		height: 150px;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		overflow-y:hidden;
+		overflow-x: scroll;
+	}
+	.eachHistory{
+		flex-shrink: 0;
+		margin: 10px;
+	}
+	.mainDiv{
+		width: 640px;
+		height: 800px;
+		flex-direction: column;
+	}
+	.smallDiv{
+		width: 300px;
+		height: 80px;
+		border-radius: 20px;
+		margin: 5px auto;
+		line-height: 85px;
+	}
+	.slider{
+		width: 200px;
+	}
+	.saveButton{
+		left:calc(50% - 100px);
+		bottom: 80px;
+	}
+
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Color</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="javascript.js"></script>
+	</head>
+	<body>
+		<div class="colorHistory"></div>
+		<div class="mainDiv">
+			<p class="currentColor">rgba(127,127,127,1)</p>
+			<div class="smallDiv red">
+				<input  class="slider sliderRed _colorRange _red" type="range" min="0" max="255">
+			</div>
+			<div class="smallDiv green">
+				<input  class="slider _colorRange _green" type="range" min="0" max="255">
+			</div>
+			<div class="smallDiv blue">
+				<input  class="slider _colorRange _blue" type="range" min="0" max="255">
+			</div>
+			<div class="smallDiv opacity">
+				<input  class="slider _colorRange _opacity _opacityRange opacity" type="range" min="0" max="1" step="0.1" value="1">
+			</div>
+			<button class="saveButton">Sacuvaj boju</button>
+			
+		</div>
+
+	</body>
+</html>
